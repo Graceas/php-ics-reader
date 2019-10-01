@@ -1,0 +1,18 @@
+{
+    "name": "graceas/php-ics-reader",
+    "description": "This class for parse iCal-file (*.ics).",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Gorelov",
+            "email": "grac.ga@gmail.com",
+            "homepage": "https://github.com/Graceas",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev"
+}
