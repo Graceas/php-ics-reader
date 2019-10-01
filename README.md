@@ -10,7 +10,7 @@ Through composer:
 
     "require": {
         ...
-        "graceas/php-ics-reader": "dev-master"
+        "graceas/php-ics-reader": "v1.0"
         ...
     }
 
