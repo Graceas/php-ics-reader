@@ -54,7 +54,7 @@ class IcsHelper
         preg_match($pattern, $iCalDate, $date);
 
         // Unix timestamp can't represent dates before 1970
-        if ($date[1] <= 1970) {
+        if (!isset($date[1]) || $date[1] <= 1970) {
             return false;
         }
 
