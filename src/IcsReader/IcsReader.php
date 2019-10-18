@@ -114,7 +114,7 @@ class IcsReader
             }
         }
 
-        if (stristr($keyword, "DTSTART") or stristr($keyword, "DTEND")) {
+        if (stristr($keyword, "DTSTART") || stristr($keyword, "DTEND")) {
             $keyword = explode(";", $keyword);
             $keyword = $keyword[0];
         }
