@@ -161,8 +161,8 @@ class IcsReader
                     $rules[$k] = $v;
                 }
                 // Get Start timestamp
-                $startTimestamp = IcsHelper::iCalDateToUnixTimestamp($anEvent['DTSTART']);
-                $endTimestamp = IcsHelper::iCalDateToUnixTimestamp($anEvent['DTEND']);
+                $startTimestamp = IcsHelper::iCalDateToUnixTimestamp($anEvent['DTSTART'] ?? '');
+                $endTimestamp = IcsHelper::iCalDateToUnixTimestamp($anEvent['DTEND'] ?? '');
                 $eventTimestampOffset = $endTimestamp - $startTimestamp;
                 // Get Interval
                 $interval = (isset($rules['INTERVAL']) && $rules['INTERVAL'] != '') ? $rules['INTERVAL'] : 1;
